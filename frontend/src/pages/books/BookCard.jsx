@@ -38,7 +38,7 @@ const BookCard = ({ book }) => {
                     </p>
                     <button
                         onClick={() => handleAddToCart(book)}
-                        className="bg-yellow-500 px-6 space-x-1 flex items-center gap-1 ">
+                        className="bg-yellow-500 py-2 px-6 space-x-1 flex items-center gap-1 ">
                         <FiShoppingCart className="" />
                         <span>Add to Cart</span>
                     </button>
