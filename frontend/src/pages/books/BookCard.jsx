@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/features/cart/cartSlice'
 
-//import { useDispatch } from 'react-redux'
-//import { addToCart } from '../../redux/features/cart/cartSlice'
-
 const BookCard = ({ book }) => {
     const dispatch = useDispatch();
 
@@ -41,7 +38,7 @@ const BookCard = ({ book }) => {
                     </p>
                     <button
                         onClick={() => handleAddToCart(book)}
-                        className="btn-primary px-6 space-x-1 flex items-center gap-1 ">
+                        className="bg-yellow-500 px-6 space-x-1 flex items-center gap-1 ">
                         <FiShoppingCart className="" />
                         <span>Add to Cart</span>
                     </button>
