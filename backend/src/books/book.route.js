@@ -1,5 +1,7 @@
 const express = require('express')
-const router = express.router();
+const Book = require("./book.model");
+const { postABook, getAllBooks/* , getSingleBook, UpdateBook, deleteABook */ } = require('./book.controller');
+const router = express.Router();
 
 // frontend => backend server => controller => book schema  => database => send to server => back to the frontend
 //post = when submit something fronted to db
@@ -8,9 +10,10 @@ const router = express.router();
 // delete = when delete something
 
 // post a book
-router.post("/create-book", async (req, res)=>{
-    
-})
+router.post("/create-book", postABook)
+
+// get all books
+router.get("/", getAllBooks);
 
 
 module.exports = router
